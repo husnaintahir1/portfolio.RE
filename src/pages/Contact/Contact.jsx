@@ -97,11 +97,11 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
                   Get in Touch
                 </h2>
                 <p className="text-gray-300 text-lg">
-                  Have a question or want to work together? Drop us a message!
+                  Have a question or want to work together? Let's connect!
                 </p>
               </div>
 
@@ -112,17 +112,27 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">olovajs@gmail.com</p>
+                    <p className="text-gray-400">husnaintahir34@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-4">
                   <div className="bg-pink-500/10 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-pink-400" />
+                    <Phone className="w-6 h-6 text-pink-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Phone</h3>
+                    <p className="text-gray-400">+92 315 856 5808</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="bg-indigo-500/10 p-3 rounded-lg">
+                    <MapPin className="w-6 h-6 text-indigo-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Laxmipure, Natore 6400</p>
+                    <p className="text-gray-400">Karachi, Pakistan</p>
                   </div>
                 </div>
               </div>
@@ -138,7 +148,7 @@ export default function Contact() {
                       placeholder="Your Name"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.name ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
+                      } focus:border-purple-500 focus:outline-none transition-colors`}
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -155,7 +165,7 @@ export default function Contact() {
                       placeholder="Your Email"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.email ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
+                      } focus:border-purple-500 focus:outline-none transition-colors`}
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
@@ -174,7 +184,7 @@ export default function Contact() {
                       placeholder="Subject"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.subject ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
+                      } focus:border-purple-500 focus:outline-none transition-colors`}
                       value={formData.subject}
                       onChange={(e) =>
                         setFormData({ ...formData, subject: e.target.value })
@@ -193,7 +203,7 @@ export default function Contact() {
                       rows="4"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.message ? "border-red-500" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors resize-none`}
+                      } focus:border-purple-500 focus:outline-none transition-colors resize-none`}
                       value={formData.message}
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
@@ -209,7 +219,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:opacity-90 transition-opacity"
+                  className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:opacity-90 transition-opacity"
                 >
                   <span>Send Message</span>
                   <Send className="w-4 h-4" />

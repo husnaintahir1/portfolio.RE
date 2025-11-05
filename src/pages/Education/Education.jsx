@@ -15,24 +15,14 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
-      mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      degree: "Bachelor of Science in Computer Science",
+      school: "IQRA University",
+      mascot: "🎓",
+      year: "2016-2021",
+      achievements: ["Computer Science Major", "Karachi, Pakistan"],
+      skills: ["Data Structures", "Algorithms", "Software Engineering", "Database Management", "Web Development", "Object-Oriented Programming"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
-    },
-    {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
-      description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Comprehensive computer science education with focus on software development, database systems, and modern web technologies. Built strong foundation in programming principles and software engineering practices.",
     },
   ];
 
@@ -74,12 +64,11 @@ const EducationSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent mb-6">
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Discover how academic excellence shapes innovative thinking and
-            professional growth.
+            Building a strong technical foundation through comprehensive computer science education.
           </p>
         </motion.div>
 
@@ -87,7 +76,7 @@ const EducationSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 gap-8 max-w-3xl mx-auto"
         >
           {educationData.map((edu, index) => (
             <motion.div
@@ -95,8 +84,8 @@ const EducationSection = () => {
               variants={cardVariants}
               className={`relative border rounded-xl p-8 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm ${
                 hoveredIndex === index
-                  ? "border-teal-500 scale-[1.02]"
-                  : "border-blue-400/20"
+                  ? "border-purple-500 scale-[1.02]"
+                  : "border-purple-400/20"
               }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -110,7 +99,7 @@ const EducationSection = () => {
                     </h3>
                   </div>
                   <p className="text-lg text-gray-300 flex items-center gap-2">
-                    <BookOpen className="w-5 h-5 text-teal-500" />
+                    <BookOpen className="w-5 h-5 text-purple-500" />
                     {edu.school}
                   </p>
                   <p className="text-gray-400 flex items-center gap-2">
@@ -119,7 +108,7 @@ const EducationSection = () => {
                   </p>
                 </div>
 
-                <p className="text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3">
+                <p className="text-gray-300 text-sm italic border-l-2 border-purple-500 pl-3">
                   {edu.description}
                 </p>
 
@@ -132,7 +121,7 @@ const EducationSection = () => {
                     {edu.achievements.map((achievement, i) => (
                       <div
                         key={i}
-                        className="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 flex items-center gap-2 text-sm"
+                        className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 flex items-center gap-2 text-sm"
                       >
                         <Award className="w-4 h-4" />
                         <span>{achievement}</span>
@@ -145,7 +134,7 @@ const EducationSection = () => {
                   {edu.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300"
+                      className="px-2 py-1 text-xs rounded bg-purple-500/10 text-purple-300"
                     >
                       {skill}
                     </span>

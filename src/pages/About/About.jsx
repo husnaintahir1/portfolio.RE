@@ -7,7 +7,7 @@ export default function About() {
       <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
-            Developer, Designer, Creator, Innovator
+            Senior Software Engineer, Team Leader, Full-Stack Developer
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
             <div className="relative mb-6 sm:mb-0">
@@ -15,7 +15,7 @@ export default function About() {
                 <img
                   src={HeroImg}
                   className="rounded-[15px] shadow block"
-                  alt="payments illustration"
+                  alt="Husnain Tahir - Senior Software Engineer"
                   width={1207}
                   height={929}
                 />
@@ -24,44 +24,30 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Nazmul Hossain, a passionate JavaScript developer
-                specializing in creating innovative web solutions and
-                user-friendly interfaces.{" "}
+                Hello! I'm Husnain Tahir, an accomplished Senior Software Engineer with 4+ years of experience delivering end-to-end solutions across the full technology stack. I specialize in{" "}
                 <span className="font-bold text-white">
-                  As the creator of the OlovaJS UI Framework
+                  Angular, React.js, Node.js, and AWS cloud services
                 </span>
-                , I'm dedicated to simplifying development workflows.
+                , with proven expertise in leading development teams and managing client relationships.
               </p>
               <p className="text-white">
-                My focus is on making web development faster, easier, and
-                accessible to all developers. Currently, I'm expanding into
-                backend development to grow as a full-stack developer and create
-                seamless, robust web applications.
+                I have a strong track record of transforming complex requirements into scalable SaaS platforms. Currently at Quanrio, LLC, I led the development of the NSPG platform serving 50+ HVAC/construction companies and spearheaded the Mawhiba Meta Minds talent discovery platform that received industry acclaim.
               </p>
 
               <div className="pt-6">
-                <blockquote className="border-l-4 border-gray-300 pl-4">
+                <blockquote className="border-l-4 border-purple-500 pl-4">
                   <p className="text-white">
-                    I'm a lifelong learner and innovator, driven by a desire to
-                    contribute to the developer community with new ideas and
-                    tools that deliver real value. As the creator of OlovaJS,
-                    I'm pushing the boundaries of JavaScript frameworks to
-                    empower developers worldwide.
+                    I thrive on solving complex technical challenges and building innovative solutions that make a real impact. As a team leader, I focus on establishing development best practices, conducting thorough code reviews, and mentoring developers to achieve excellence in every project.
                   </p>
 
                   <div className="mt-6 space-y-3">
                     <cite className="block font-medium text-white">
-                      Nazmul Hossain, Creator of
+                      Husnain Tahir
                     </cite>
-                    <div className="flex items-center gap-2">
-                      <img
-                        className="h-5 w-fit"
-                        src={OlovaLogo}
-                        alt="Olova Logo"
-                        height="20"
-                        width="auto"
-                      />
-                      <span className="text-white">OlovaJS</span>
+                    <div className="flex items-center gap-3">
+                      <span className="text-gray-400">Senior Software Engineer</span>
+                      <span className="text-gray-500">•</span>
+                      <span className="text-gray-400">Karachi, Pakistan</span>
                     </div>
                   </div>
                 </blockquote>

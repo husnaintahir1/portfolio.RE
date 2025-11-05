@@ -42,31 +42,35 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer & Creator of Olova.js",
-    "Learning MARN Stack",
-    "Linux & GitHub for DevOps Enthusiast",
+    "Senior Software Engineer & Full-Stack Developer",
+    "Angular, React & Node.js Specialist",
+    "AWS Cloud & Microservices Architecture",
+    "Leading Teams & Delivering SaaS Solutions",
   ];
 
   const [code] = useState(`
 const profile = {
-    name: 'Nazmul Hossain',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    name: 'Husnain Tahir',
+    title: 'Senior Software Engineer | Full-Stack Developer',
+    location: 'Karachi, Pakistan',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        'Angular', 'React.js', 'Next.js', 'TypeScript',
+        'Node.js', 'NestJS', 'Express.js', 'Python',
+        'MySQL', 'MongoDB', 'DynamoDB',
+        'AWS', 'Docker', 'Kubernetes', 'Microservices'
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    teamLeader: true,
+    yearsOfExperience: 4,
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
-            this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.teamLeader &&
+            this.skills.length >= 10 &&
+            this.yearsOfExperience >= 4
         );
     }
 };
@@ -171,8 +175,8 @@ const profile = {
             {/* Left column - Text content */}
             <div className="w-full lg:w-1/2 mb-12 lg:mb-0 animate__animated animate__fadeInLeft relative">
               {/* Decorative blurs */}
-              <div className="absolute hidden lg:-top-20 lg:-left-20 lg:block w-48 h-48 lg:w-64 lg:h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute hidden lg:block lg:top-40 lg:-right-20 w-48 h-48 lg:w-64 lg:h-64 bg-teal-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute hidden lg:-top-20 lg:-left-20 lg:block w-48 h-48 lg:w-64 lg:h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute hidden lg:block lg:top-40 lg:-right-20 w-48 h-48 lg:w-64 lg:h-64 bg-pink-500/10 rounded-full blur-3xl"></div>
 
               {/* Welcome badge */}
               <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 mb-6 sm:mb-8 animate__animated animate__fadeInDown animate__delay-1s">
@@ -190,19 +194,19 @@ const profile = {
                     I&apos;m
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Nazmul Hossain
+                      Husnain Tahir
                     </span>
                   </span>
                 </h1>
-                <div className="absolute -z-10 top-1/2 -translate-y-1/2 left-1/4 w-24 sm:w-32 h-24 sm:h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
+                <div className="absolute -z-10 top-1/2 -translate-y-1/2 left-1/4 w-24 sm:w-32 h-24 sm:h-32 bg-purple-500/20 rounded-full blur-2xl animate-pulse"></div>
               </div>
 
               {/* Role badge */}
-              <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-500/10 to-teal-500/10 border border-blue-500/20 mb-6 sm:mb-8 backdrop-blur-sm animate__animated animate__fadeInUp animate__delay-1s">
-                <i className="fas fa-rocket text-blue-400 animate-bounce text-sm sm:text-base"></i>
+              <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 mb-6 sm:mb-8 backdrop-blur-sm animate__animated animate__fadeInUp animate__delay-1s">
+                <i className="fas fa-rocket text-purple-400 animate-bounce text-sm sm:text-base"></i>
                 <span>
                   <FlipWords
-                    className={"text-lg sm:text-xl text-blue-400 font-medium"}
+                    className={"text-lg sm:text-xl text-purple-400 font-medium"}
                     words={words}
                   />
                 </span>
@@ -211,8 +215,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | OlovaJS creator 🔧 | Crafting frameworks
-                  and coding the future 💻✨
+                  Accomplished Senior Software Engineer delivering end-to-end solutions across the full technology stack. Proven expertise in leading development teams and transforming complex requirements into scalable SaaS platforms.
                 </p>
               </div>
 
@@ -220,12 +223,14 @@ const profile = {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
                 {/* View Projects Button */}
                 <a
-                  href="https://github.com/seraprogrammer"
-                  className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
+                  href="https://github.com/husnaintahir1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 to-pink-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#8b5cf6]"
                 >
-                  <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
+                  <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-400">
                     <span className="relative flex items-center justify-center gap-2 text-white font-medium">
-                      <span>Learn More</span>
+                      <span>View GitHub</span>
                       <i className="fas fa-arrow-right transform transition-all duration-300 group-hover:translate-x-1"></i>
                     </span>
                   </span>
@@ -233,13 +238,15 @@ const profile = {
 
                 {/* Contact Button */}
                 <a
-                  href="#"
-                  className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
+                  href="https://linkedin.com/in/husnaintahir1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#8b5cf6]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
                     <span className="relative flex items-center justify-center gap-2 text-gray-300 font-medium group-hover:text-white">
-                      <span>Get Resume</span>
-                      <i className="fas fa-envelope transform transition-all duration-300 group-hover:rotate-12"></i>
+                      <span>LinkedIn Profile</span>
+                      <i className="fab fa-linkedin transform transition-all duration-300 group-hover:rotate-12"></i>
                     </span>
                   </span>
                 </a>
@@ -248,18 +255,17 @@ const profile = {
               {/* Floating badges */}
               <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
                 <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
-                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI
-                  Magic
+                  <i className="fas fa-layer-group"></i>&nbsp;&nbsp;Full Stack
                 </div>
               </div>
               <div className="hidden lg:block absolute right-10 top-20 animate-float">
-                <div className="px-4 py-2 rounded-lg bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 text-blue-400">
-                  <i className="fas fa-code"></i>&nbsp;&nbsp;Clean Code
+                <div className="px-4 py-2 rounded-lg bg-pink-500/10 backdrop-blur-sm border border-pink-500/20 text-pink-400">
+                  <i className="fas fa-cloud"></i>&nbsp;&nbsp;AWS Cloud
                 </div>
               </div>
               <div className="hidden lg:block absolute top-[17rem] left-[70%] transform -translate-x-1/2 animate-float">
-                <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400">
-                  <i className="fas fa-lightbulb"></i>&nbsp;&nbsp;Innovation
+                <div className="px-4 py-2 rounded-lg bg-indigo-500/10 backdrop-blur-sm border border-indigo-500/20 text-indigo-400">
+                  <i className="fas fa-users"></i>&nbsp;&nbsp;Team Leader
                 </div>
               </div>
             </div>

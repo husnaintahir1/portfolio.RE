@@ -5,44 +5,44 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "National Standard Price Guide (NSPG)",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
+      "Multi-tenant SaaS platform serving 50+ HVAC/construction companies. Led transformation of legacy desktop application into integrated product suite with Numbers Cruncher, Price Guide, Price App, and CRM modules using React.js, Node.js, MySQL, and AWS.",
     src: "rock.jpg",
     link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
-    color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+    color: "#8b5cf6",
+    githubLink: "https://github.com/husnaintahir1",
+    liveLink: "https://nspg.com",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "Mawhiba Meta Minds (M3)",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
+      "Scalable talent discovery platform with integrated learning and assessment tools. Transformed vague requirements into comprehensive solution with Coursera and Mercer-Mettl SSO integration. Successfully launched at GCGC Education Conference.",
     src: "tree.jpg",
     link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
-    color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    color: "#ec4899",
+    githubLink: "https://github.com/husnaintahir1",
+    liveLink: "https://mawhiba.com",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "Bakeree.io NFT Launchpad",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+      "Web3 platform streamlining NFT creation and management with IPFS integration for decentralized storage. Reduced NFT creation complexity by 70%, democratizing access for non-technical users. Built with React.js, Node.js, Web3, and Blockchain.",
     src: "water.jpg",
     link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
+    color: "#6366f1",
+    githubLink: "https://github.com/husnaintahir1",
+    liveLink: "https://bakeree.io",
   },
   {
-    title: "CodeKori 🔥",
+    title: "Helpers.com Client Portal",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+      "Developed comprehensive client portal for freight management system with shipping and taxation modules. Achieved 20% increase in user retention and reduced operational costs by 15% through optimized workflows.",
     src: "house.jpg",
     link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
-    color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+    color: "#a855f7",
+    githubLink: "https://github.com/husnaintahir1",
+    liveLink: "https://helpers.com",
   },
 ];
 

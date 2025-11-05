@@ -13,39 +13,39 @@ const ExperienceCard = ({
     <div className="absolute inset-0 backdrop-blur-lg bg-white/5 rounded-lg" />
 
     {/* Animated gradient border */}
-    <div className="absolute -inset-[2px] bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-100 animate-gradient-xy transition-all duration-500" />
+    <div className="absolute -inset-[2px] bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 rounded-lg opacity-0 group-hover:opacity-100 animate-gradient-xy transition-all duration-500" />
 
     <div className="relative bg-gray-900/90 rounded-lg p-8 h-full border border-gray-800/50 shadow-xl backdrop-blur-xl">
       {/* Floating icon with pulse effect */}
       <div className="relative mb-6">
-        <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-25 rounded-full blur-xl group-hover:opacity-75 animate-pulse transition-all duration-500" />
-        <Icon className="w-12 h-12 text-cyan-400 relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+        <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-pink-500 opacity-25 rounded-full blur-xl group-hover:opacity-75 animate-pulse transition-all duration-500" />
+        <Icon className="w-12 h-12 text-purple-400 relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
       </div>
 
       {/* Content with improved typography */}
       <div className="space-y-3">
-        <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+        <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           {title}
         </h3>
         <div className="flex justify-between items-center text-gray-300">
-          <span className="font-semibold text-blue-400">{company}</span>
-          <span className="text-sm font-mono bg-blue-500/10 px-3 py-1 rounded-full">
+          <span className="font-semibold text-purple-400">{company}</span>
+          <span className="text-sm font-mono bg-purple-500/10 px-3 py-1 rounded-full">
             {period}
           </span>
         </div>
-        <p className="text-gray-300 border-l-4 border-blue-500/50 pl-4 mt-4 leading-relaxed">
+        <p className="text-gray-300 border-l-4 border-purple-500/50 pl-4 mt-4 leading-relaxed">
           {description}
         </p>
       </div>
 
       {/* Decorative elements */}
       <div className="absolute top-4 right-4 w-20 h-20">
-        <div className="absolute top-0 right-0 w-6 h-[2px] bg-cyan-500/50" />
-        <div className="absolute top-0 right-0 w-[2px] h-6 bg-cyan-500/50" />
+        <div className="absolute top-0 right-0 w-6 h-[2px] bg-purple-500/50" />
+        <div className="absolute top-0 right-0 w-[2px] h-6 bg-purple-500/50" />
       </div>
       <div className="absolute bottom-4 left-4 w-20 h-20">
-        <div className="absolute bottom-0 left-0 w-6 h-[2px] bg-purple-500/50" />
-        <div className="absolute bottom-0 left-0 w-[2px] h-6 bg-purple-500/50" />
+        <div className="absolute bottom-0 left-0 w-6 h-[2px] bg-pink-500/50" />
+        <div className="absolute bottom-0 left-0 w-[2px] h-6 bg-pink-500/50" />
       </div>
     </div>
   </div>
@@ -54,28 +54,28 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      icon: Code2,
+      title: "Senior Software Engineer",
+      company: "Quanrio, LLC",
+      period: "Dec 2021 - Present",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "Led NSPG Development serving 50+ companies, spearheaded Mawhiba Meta Minds platform, engineered Bakeree NFT Launchpad. Led team of 8 developers, achieved 40% performance improvements, and managed critical client relationships.",
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
+      title: "Frontend Developer",
+      company: "Miletap",
+      period: "Mar 2021 - Nov 2021",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Developed task management and video conferencing modules improving user engagement by 25%. Engineered shipping/taxation modules reducing operational costs by 15%. Created client portal achieving 20% increase in user retention.",
     },
     {
-      icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
+      icon: Network,
+      title: "Frontend Developer",
+      company: "CentoSquare",
+      period: "Jun 2020 - Mar 2021",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Delivered e-commerce platforms with 10% improved page load times and 35% traffic increase through SEO optimization. Provided technical feasibility assessments reducing development revisions by 30%.",
     },
   ];
 
@@ -108,13 +108,13 @@ const ExperienceSection = () => {
           {/* Section header with enhanced effects */}
           <div className="flex flex-col items-center space-y-8 mb-20">
             <div className="relative">
-              <h2 className="text-5xl md:text-7xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+              <h2 className="text-5xl md:text-7xl font-black text-transparent bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-center">
                 Professional Journey
               </h2>
-              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
+              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
-              "Transforming ideas into digital reality, one project at a time"
+              "4+ years of delivering end-to-end solutions and leading teams to success"
             </p>
           </div>
 
@@ -127,8 +127,8 @@ const ExperienceSection = () => {
         </div>
 
         {/* Enhanced background effects */}
-        <div className="absolute top-20 left-20 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-20 left-20 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-pink-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" />
       </div>
     </>
   );
